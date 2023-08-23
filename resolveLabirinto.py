@@ -53,13 +53,14 @@ def eh_possivel_sair(labirinto):
 
     return False
 
+if __name__ == "__main__":
+    lab = gera_lab(6,9) #gera um labirinto 
+    lab [1][0] = "p"
 
-lab = gera_lab(6,9) #gera um labirinto 
-lab [1][0] = "p"
+    print_lab(lab)
 
-print_lab(lab)
 
-resultado_esperado = True
-resultado = eh_possivel_sair(lab)
+    resultado_esperado = True
+    resultado = eh_possivel_sair(lab)
 
-print(resultado_esperado == resultado)
+    print(resultado_esperado == resultado)
